@@ -15,5 +15,6 @@ namespace BackEnd_BD.Models
 
         }
         public DbSet<Alumno> Alumnos { get; set; }
+        public DbSet<Profesor> Profesor { get; set; }
     }
 }
