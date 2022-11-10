@@ -14,8 +14,11 @@ namespace Back_End_BD.Controllers
         public ActionResult Index()
         {
             using (AlumnoDbContext dbAlumnos = new AlumnoDbContext())
-                //select * from alumnos;
+            {
                 return View(dbAlumnos.Alumnos.ToList());
+            }
+                //select * from alumnos;
+                
         }
         public ActionResult Details(int? id)
         {
